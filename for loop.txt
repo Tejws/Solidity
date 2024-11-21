@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract LoopExample {
+    uint256[] public numbers; // Dynamic array to store numbers
+
+    // Function to populate numbers from 1 to 10
+    function populateNumbers() public {
+        delete numbers; // Clear the array if it already has values
+        for (uint256 i = 1; i <= 100; i++) {
+            numbers.push(i); // Add each number to the array
+        }
+    }
+
+    // Function to retrieve all numbers
+    function getNumbers() public view returns (uint256[] memory) {
+        return numbers;
+    }
+}

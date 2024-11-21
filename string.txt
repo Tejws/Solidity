@@ -1,0 +1,8 @@
+//SPDX-License-Identifier: MIT 
+pragma solidity  ^0.8.0; 
+contract SimpleStorage { 
+ 
+function firstnumber() public pure returns ( string memory){ 
+string memory value = "Hello world"; 
+return value; 
+}}

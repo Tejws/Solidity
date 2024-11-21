@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.26;
+contract MyContract {
+    //State Variarbles
+   
+    string[] public stringArray = ["apple", "banana", "carrot"];
+    uint[][] public array2D = [[1, 2, 3], [4, 5, 6]];
+    string[] public values;
+
+    // Function to add a new string value to the 'values' array
+    function addValue(string memory _value) public {
+        values.push(_value);
+    }
+    // Function to get the count of elements in the 'values' array
+    function valueCount() public view returns (uint) {
+        return values.length;
+    }
+
+}
